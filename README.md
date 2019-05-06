@@ -2,7 +2,7 @@
 
 - 百分比布局
 - [弹性盒布局](https://wscats.github.io/layout-demo/layout/%E5%BC%B9%E6%80%A7%E7%9B%92%E5%B8%83%E5%B1%80/demo)
-- 分栏布局
+- [分栏布局](https://wscats.github.io/layout-demo/layout/%E5%88%86%E6%A0%8F%E5%B8%83%E5%B1%80/demo/)
 - 响应式布局
 
 
