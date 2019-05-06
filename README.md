@@ -25,11 +25,11 @@
 
 * 视觉视口（visual viewport）
 
-`layout viewport`的宽度是大于浏览器可视区域的宽度的，所以我们还需要一个`viewport`来代表 浏览器可视区域的大小，这个`viewport`叫做`visual viewport`。在js中可以通过`window.innerWidth`来获取
+`layout viewport`的宽度是大于浏览器可视区域的宽度的，所以我们还需要一个`viewport`来代表 浏览器可视区域的大小，这个`viewport`叫做`visual viewport`。在`JS`中可以通过`window.innerWidth`来获取
 
 * 理想视口（ideal viewport）
 
-一个能完美适配移动设备的视口，需要手动添加meta标签，一般视口大小都设置为设备大小
+一个能完美适配移动设备的视口，需要手动添加`meta`标签，一般视口大小都设置为设备大小
 
 ```html
 <meta name="viewport" content="width=device-width">
