@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        p {
+            color: red
+        }
+
+        /* 小于500px就显示红色 */
+        @media (min-width:500px) {
+            #demo1 {
+                color: green
+            }
+        }
+
+        @media all and (min-width:500px) and (max-width:800px) {
+            #demo2 {
+                color: green
+            }
+        }
+    </style>
+    <p>1.屏幕宽度大于等于500px就显示绿色</p>
+    <div id="demo1">@media (min-width:500px)</div>
+    <p>2.屏幕宽度大于等于500px就显示红色并且小于等于800px就显示绿色</p>
+    <div id="demo2">@media (min-width:500px) and (max-width:800px)</div>
+    <p>3.屏幕宽度大于等于500px就显示红色并且小于等于800px的所有设备显示绿色</p>
+    <div id="demo2">@media (min-width:500px) and (max-width:800px)</div>
+</body>
+
+</html>
