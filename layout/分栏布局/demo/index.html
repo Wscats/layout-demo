@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .newspaper {
+            -moz-column-width: 100px;
+            /* Firefox */
+            -webkit-column-width: 100px;
+            /* Safari 和 Chrome */
+            column-width: 100px;
+
+            -moz-column-count: 3;
+            /* Firefox */
+            -webkit-column-count: 3;
+            /* Safari and Chrome */
+            /* 把 div 元素中的文本划分为三列 会覆盖column-width属性，类似权重布局 */
+            column-count: 3;
+
+            /* 将 div 元素中的文本分为三列，并列间 30 像素的间隔 */
+            -moz-column-gap: 30px;
+            /* Firefox */
+            -webkit-column-gap: 30px;
+            /* Safari and Chrome */
+            column-gap: 30px;
+
+            /* 规定列之间的宽度、样式和颜色 */
+            -moz-column-rule: 4px outset #ff0000;
+            /* Firefox */
+            -webkit-column-rule: 4px outset #ff0000;
+            /* Safari and Chrome */
+            column-rule: 4px outset #ff0000;
+        }
+        
+        h2 {
+            /* column-span 属性规定元素应横跨多少列 可以写数字 */
+            -webkit-column-span: all;
+            /* Chrome */
+            column-span: all;
+        }
+    </style>
+</head>
+
+<body>
+    <p><b>注释：</b>Internet Explorer 不支持 column-count 属性。</p>
+    <div class="newspaper">
+        <h2>post请求比get请求复杂一点</h2>
+        post请求比get请求复杂一点，首先降Content-Type格式为application/x-www-form-urlencoded，因为axios的post方法默认使用application/json格式编码数据，那么解决方案就有两种，一是后台改变接收参数的方法，另一种则是将axios的post方法的编码格式修改为application/x-www-form-urlencoded，这样就不需要后台做什么修改了
+    </div>
+</body>
+
+</html>
