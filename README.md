@@ -3,7 +3,7 @@
 ## 页面结构布局
 
 - 百分比布局
-- [弹性盒布局]((https://wscats.github.io/layout-demo/))
+- [弹性盒布局](https://wscats.github.io/layout-demo/)
 - 分栏布局
 - 响应式布局
 
