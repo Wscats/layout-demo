@@ -1,17 +1,17 @@
 ## 页面结构布局
 
-- 百分比布局
-- [弹性盒布局](https://wscats.github.io/layout-demo/layout/%E5%BC%B9%E6%80%A7%E7%9B%92%E5%B8%83%E5%B1%80/demo)
+- [百分比布局](https://wscats.github.io/layout-demo/layout/百分比布局/demo)
+- [弹性盒布局](https://wscats.github.io/layout-demo/layout/弹性盒布局/demo)
 - [分栏布局](https://wscats.github.io/layout-demo/layout/%E5%88%86%E6%A0%8F%E5%B8%83%E5%B1%80/demo/)
-- [响应式布局]()
+- [响应式布局](https://wscats.github.io/layout-demo/layout/自适应布局%2B响应式布局/demo)
 
 
 ## 单位
 
-- [em](https://wscats.github.io/layout-demo/layout/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%83%E5%B1%80/demo/em.html)
-- [rem](https://wscats.github.io/layout-demo/layout/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%83%E5%B1%80/demo/rem.html)
-- [px](https://wscats.github.io/layout-demo/layout/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%83%E5%B1%80/demo/px.html)
-- [vw和vh](https://wscats.github.io/layout-demo/layout/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%83%E5%B1%80/demo/vw-vh.html)
+- [em](https://wscats.github.io/layout-demo/layout/移动端布局/demo/em.html)
+- [rem](https://wscats.github.io/layout-demo/layout/移动端布局/demo/rem.html)
+- [px](https://wscats.github.io/layout-demo/layout/移动端布局/demo/px.html)
+- [vw和vh](https://wscats.github.io/layout-demo/layout/移动端布局/demo/vw-vh.html)
 
 ## 视口
 
