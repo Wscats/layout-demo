@@ -1,5 +1,6 @@
 ## 页面结构布局
 
+
 - [百分比布局](https://wscats.github.io/layout-demo/layout/百分比布局/demo)
 - [弹性盒布局](https://wscats.github.io/layout-demo/layout/弹性盒布局/demo)
 - [分栏布局](https://wscats.github.io/layout-demo/layout/%E5%88%86%E6%A0%8F%E5%B8%83%E5%B1%80/demo/)
@@ -8,10 +9,25 @@
 
 ## 单位
 
-- [em](https://wscats.github.io/layout-demo/layout/移动端布局/demo/em.html)
-- [rem](https://wscats.github.io/layout-demo/layout/移动端布局/demo/rem.html)
+`px`单位的名称为像素，它是一个固定大小的单元，像素的计算是针对屏幕的，一个像素`1px`就是屏幕上的一个点，即屏幕分辨率的最小分割。由于它是固定大小的单位，单独用它来设计的网页，如果适应大屏幕电脑，在小屏幕手机上就会很不友好，做不到自适应的效果
 - [px](https://wscats.github.io/layout-demo/layout/移动端布局/demo/px.html)
+
+`em`单位的名称为相对长度单位，它是用来设置文本的字体尺寸的，它是相对于当前对象内文本的字体尺寸；如果没有人为设置当前对象内文本的字体尺寸，那么它相对的是浏览器默认的字体尺寸`16px`
+- [em](https://wscats.github.io/layout-demo/layout/移动端布局/demo/em.html)
+
+相对长度单位，它的出现是为了解决`em`的缺点，`em`可以说是相对于父级元素的字体大小，当父级元素字体大小改变时，又得重新计算。`rem`出现就可以解决这样的问题，`rem`只相对于根目录，即`HTML`元素。所以只要在`HTML`标签上设置字体大小，文档中的字体大小都会以此为参照标准，一般用于自适应布局
+- [rem](https://wscats.github.io/layout-demo/layout/移动端布局/demo/rem.html)
+
+`view height`和`view width`的简写，是指可视窗口的高度。假如高度是1200px的话。那10vh就是120px，即`1 vh = 1200px/100 = 12 px`
 - [vw和vh](https://wscats.github.io/layout-demo/layout/移动端布局/demo/vw-vh.html)
+
+总结：
+
+- `px`是固定长度单位，不随其它元素的变化而变化
+- `em`和`%`是相对于父级元素的单位，会随父级元素的属性`font-size`或其它属性变化而变化
+- `rem`是相对于根目录`HTML`元素的，所有它会随`HTML`元素的属性`font-size`变化而变化
+- `px`和`%`用的比较广泛一些，可以充当更多属性的单位，而`em`和`rem`是字体大小的单位，用于充当`font-size`属性的单位
+- 一般来说：`1em = 1rem = 100% = 16 px`
 
 ## 视口
 
@@ -35,6 +51,8 @@
 <meta name="viewport" content="width=device-width">
 ```
 
+举个例子，手机上的浏览器是全屏的，手机实际宽度是320像素(即`visual viewport`)，而手机分辨率是980宽度(即`layout viewport`)，所以手机上打出来的是980而不是320，如果设置了`meta`完美适配设备(即`ideal viewport`)
+
 * meta标签属性
 
 > 利用以下属性对`viewport`进行控制, 可多个同时使用，并用逗号隔开
@@ -46,6 +64,8 @@
 - `user-scalable`是否允许用户进行缩放
     - no代表不允许
     - yes代表允许
+
+所以如果不定义`viewpoint`的话，页面宽度以屏幕分辨率为基准，而设置以后可以根据设备宽度来调整页面，达到适配终端大小的效果
 
 ## 动态设置字体大小及viewport
 
