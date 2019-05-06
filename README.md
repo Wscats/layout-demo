@@ -3,7 +3,7 @@
 - [百分比布局](https://wscats.github.io/layout-demo/layout/百分比布局/demo)
 - [弹性盒布局](https://wscats.github.io/layout-demo/layout/弹性盒布局/demo)
 - [分栏布局](https://wscats.github.io/layout-demo/layout/%E5%88%86%E6%A0%8F%E5%B8%83%E5%B1%80/demo/)
-- [响应式布局](https://wscats.github.io/layout-demo/layout/自适应布局%2B响应式布局/demo)[文档](https://github.com/Wscats/layout-demo/blob/gh-pages/layout/自适应布局%2B响应式布局/doc/自适应布局与响应式布局.md)
+- [响应式布局](https://wscats.github.io/layout-demo/layout/自适应布局%2B响应式布局/demo)  [文档](https://github.com/Wscats/layout-demo/blob/gh-pages/layout/自适应布局%2B响应式布局/doc/自适应布局与响应式布局.md)
 
 
 ## 单位
