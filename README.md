@@ -3,7 +3,7 @@
 - 百分比布局
 - [弹性盒布局](https://wscats.github.io/layout-demo/layout/%E5%BC%B9%E6%80%A7%E7%9B%92%E5%B8%83%E5%B1%80/demo)
 - [分栏布局](https://wscats.github.io/layout-demo/layout/%E5%88%86%E6%A0%8F%E5%B8%83%E5%B1%80/demo/)
-- 响应式布局
+- [响应式布局]()
 
 
 ## 单位
@@ -36,7 +36,7 @@ layout viewport 的宽度是大于浏览器可视区域的宽度的，所以我�
 
 > 利用以下属性对viewport进行控制, 可多个同时使用，并用逗号隔开
 
-- width 设置layout viewport  的宽度，为一个正整数，或字符串"device-width"
+- width 设置layout viewport  的宽度，为一个正整数，或字符串device-width
 - initial-scale 设置页面的初始缩放值，为一个数字，可以带小数
 - minimum-scale 允许用户的最小缩放值，为一个数字，可以带小数
 - maximum-scale 允许用户的最大缩放值，为一个数字，可以带小数
