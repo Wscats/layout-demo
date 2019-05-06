@@ -17,16 +17,19 @@
 
 - [viewpoint](https://github.com/Wscats/iPhone-X)
 
->移动设备上的viewport就是设备的屏幕上能用来显示我们的网页的那一块区域
+> 移动设备上的`viewport`就是设备的屏幕上能用来显示我们的网页的那一块区域
 
 * 布局视口（layout viewport）
+
 以屏幕分辨率为基准，实际上布局视口的宽度要比屏幕宽出很多，以上图片显示的尺寸就是 layout viewport
 
 * 视觉视口（visual viewport）
-layout viewport 的宽度是大于浏览器可视区域的宽度的，所以我们还需要一个viewport来代表 浏览器可视区域的大小，这个viewport叫做**visual viewport**。在js中可以通过window.innerWidth来获取
+
+`layout viewport`的宽度是大于浏览器可视区域的宽度的，所以我们还需要一个`viewport`来代表 浏览器可视区域的大小，这个`viewport`叫做`visual viewport`。在js中可以通过`window.innerWidth`来获取
 
 * 理想视口（ideal viewport）
->一个能完美适配移动设备的视口，需要手动添加meta标签，一般视口大小都设置为设备大小
+
+一个能完美适配移动设备的视口，需要手动添加meta标签，一般视口大小都设置为设备大小
 
 ```html
 <meta name="viewport" content="width=device-width">
@@ -34,13 +37,13 @@ layout viewport 的宽度是大于浏览器可视区域的宽度的，所以我�
 
 * meta标签属性
 
-> 利用以下属性对viewport进行控制, 可多个同时使用，并用逗号隔开
+> 利用以下属性对`viewport`进行控制, 可多个同时使用，并用逗号隔开
 
-- width 设置layout viewport  的宽度，为一个正整数，或字符串device-width
-- initial-scale 设置页面的初始缩放值，为一个数字，可以带小数
-- minimum-scale 允许用户的最小缩放值，为一个数字，可以带小数
-- maximum-scale 允许用户的最大缩放值，为一个数字，可以带小数
-- user-scalable 是否允许用户进行缩放
+- `width`设置`layout viewport`的宽度，为一个正整数，或字符串`device-width`
+- `initial-scale`设置页面的初始缩放值，为一个数字，可以带小数
+- `minimum-scale`允许用户的最小缩放值，为一个数字，可以带小数
+- `maximum-scale`允许用户的最大缩放值，为一个数字，可以带小数
+- `user-scalable`是否允许用户进行缩放
     - no代表不允许
     - yes代表允许
 
