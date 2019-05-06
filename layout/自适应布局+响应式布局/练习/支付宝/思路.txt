@@ -1,0 +1,3 @@
+1.外层布局：
+header footer定高
+main flex：1  overflow-x:hidden;overflow-y:auto;

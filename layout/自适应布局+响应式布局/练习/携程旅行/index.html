@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>携程旅行</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font: 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+		}
+		
+		/*全局设置*/
+		a {
+			text-decoration: none;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.wrapper {
+			min-width: 320px;
+		}
+		
+		/*轮播图*/
+		.banner {
+			display: flex;
+		}
+
+		.banner a {
+			flex: 1;
+		}
+
+		/*主体*/
+		.main {
+			padding: 5px;
+		}
+
+		/*导航*/
+		.item {
+			height: 90px;
+			margin-bottom: 5px;
+			display: flex;
+			border-radius: 5px;
+		}
+		
+		/*一级导航*/
+		.pub {
+			flex: 1;
+		}
+		
+		/*二级导航*/
+		.sub {
+			flex: 2;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.sub a {
+			width: 50%;
+			height: 45px;
+			text-align: center;
+			line-height: 45px;
+			border-left: 1px solid #FFF;
+			border-top: 1px solid #FFF;
+			color: #FFF;
+			font-size: 14px;
+			text-shadow: 0 2px 1px rgba(0,0,0,0.2);
+			box-sizing: border-box;
+		}
+
+		.sub a:nth-child(-n+2) {
+			border-top: 0 none;
+		}
+
+		.item:nth-child(1) {
+			background-color: #ff697a;
+		}
+
+		.item:nth-child(2) {
+			background-color: #3d98ff;
+		}
+
+		.item:nth-child(3) {
+			background-color: #44c522;
+		}
+
+		.item:nth-child(4) {
+			background-color: #fc9720;
+		}
+
+		.item:nth-child(4) .sub a {
+			width: 33.333%;
+		}
+
+		.item:nth-child(4) .sub a:nth-child(-n+3) {
+			border-top: 0 none;
+		}
+
+		/*其它部分*/
+		.extra {
+			display: flex;
+		}
+
+		.extra a {
+			flex: 1;
+		}
+
+		.extra img {
+			width: 100%;
+		}
+
+		/*底部导航*/
+		footer nav {
+			display: flex;
+		}
+
+		footer nav a {
+			flex: 1;
+			height: 44px;
+			padding-top: 20px;
+			text-align: center;
+			line-height: 1;
+			border-top: 1px solid #CCC;
+			border-bottom: 1px solid #C2C2C2;
+			font-size: 12px;
+			color: #333;
+			box-sizing: border-box;
+		}
+
+		/*底部链接*/
+		footer p {
+			text-align: center;
+			font-size: 12px;
+			color: #999;
+		}
+		footer .link a {
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- 头部 -->
+		<header>
+			<!-- 轮播图 -->
+			<section class="banner">
+				<a href="javascript:;">
+					<img src="./images/banner.jpg">
+				</a>
+			</section>
+		</header>
+		<!-- 主体 -->
+		<div class="main">
+			<!-- 导航菜单 -->
+			<section class="nav">
+				<div class="item">
+					<div class="pub"></div>
+					<div class="sub">
+						<a href="javascript:;">海外酒店</a>
+						<a href="javascript:;">团购</a>
+						<a href="javascript:;">特惠酒店</a>
+						<a href="javascript:;">客栈公寓</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="pub"></div>
+					<div class="sub">
+						<a href="javascript:;">火车票</a>
+						<a href="javascript:;">汽车票船票</a>
+						<a href="javascript:;">国际机票</a>
+						<a href="javascript:;">自驾专车</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="pub"></div>
+					<div class="sub">
+						<a href="javascript:;">攻略身边</a>
+						<a href="javascript:;">邮轮</a>
+						<a href="javascript:;">周末游</a>
+						<a href="javascript:;">保险签证</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="sub">
+						<a href="javascript:;">门票玩乐</a>
+						<a href="javascript:;">美食</a>
+						<a href="javascript:;">全球购</a>
+						<a href="javascript:;">礼品卡</a>
+						<a href="javascript:;">出境WIFI</a>
+						<a href="javascript:;">更多</a>
+					</div>
+				</div>
+			</section>
+			<!-- 其它部分 -->
+			<section class="extra">
+				<a href="javascript:;">
+					<img src="./images/extra_1.png">
+				</a>
+				<a href="javascript:;">
+					<img src="./images/extra_2.png">
+				</a>
+			</section>			
+		</div>
+		<!-- 底部 -->
+		<footer>
+			<!-- 底部导航 -->
+			<nav>
+				<a href="javascript:;">电话预订</a>
+				<a href="javascript:;">下载客户端</a>
+				<a href="javascript:;">我的</a>
+			</nav>
+			<!-- 版本信息 -->
+			<div class="copyright">
+				<!-- 网站链接 -->
+				<p class="link">
+					<a href="javascript:;">网站地图</a> |
+					<a href="javascript:;">ENGLISH</a> |
+					<a href="javascript:;">电脑版</a>
+				</p>
+				<p>&copy;2015 携程旅行</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

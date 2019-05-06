@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>演示-骰子</title>
+	<style>
+		.dice{
+			height: 200px;
+			width: 800px;
+			box-shadow: 0 0 3px 3px #ccc;
+			margin: 200px auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.dice>div{
+			width: 100px;
+			height: 100px;
+			background: #E7E7E7;
+			box-sizing:border-box;
+			margin-right: 25px;
+			padding:8px;
+			border-radius: 10px;
+			display: flex;flex-wrap: wrap;
+			box-shadow: 0 4px  0 0 #fff inset,0 -4px 0 0 #BBBBBB inset,4px 0 0 0 #D7D7D7 inset,-4px 0 0 0 #D7D7D7 inset;
+		}
+		.dice span{
+			display: block;
+			width: 25px;
+			height: 25px;
+			background: #009;
+			border-radius: 50%;
+			box-shadow: 0 2px 0 0 #111111 inset,0 -2px  0 0 #555555 inset;
+		}
+		.dice>div:last-child{
+			margin-right: 0;
+		}
+
+
+		.one{justify-content: center;align-items: center;}
+		.one span{background-color:#c00;}
+
+		.two{justify-content: space-between;}
+		.two span:last-child{align-self: flex-end}
+
+		.three{justify-content: center;align-items: center}
+		.three span:first-child{align-self:flex-start;}
+		.three span:last-child{align-self:flex-end;}
+
+		.four,.five,.six{
+			justify-content: space-between;align-content: space-between;
+		}
+		.four span{background-color: #c00}
+		.four span:first-child,.five span:first-child{margin-right:10px;}
+
+		.five span:nth-child(3){margin:0 30px;background-color:#c00;}
+
+		.six span:first-child,.six span:nth-child(3){margin-right:10px;}
+		
+
+
+
+	</style>
+</head>
+<body>
+	<div class="dice">
+		<div class="one">
+			<span></span>
+		</div>
+		<div class="two">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="three">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="four">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+		</div>
+		<div class="five">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+		</div>
+		<div class="six">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+		</div>
+	</div>
+</body>
+</html>

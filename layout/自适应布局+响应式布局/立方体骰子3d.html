@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>骰子</title>
+    <style>
+    body{padding:200px;}
+    .dice{position:relative;left:0;top:0;width:110px;height:110px;transform-style:preserve-3d;transform:perspective(800px) rotateX(30deg);}
+    .dice > div{ width: 100px; height: 100px; border-radius: 5px; border: 2px solid #ddd; display: flex; flex-wrap:wrap;background-color: #fff;position:absolute;top:0;right:0;}
+    .dice span { width: 20px; height: 20px; border-radius: 50%; background-color: #00c }
+
+    .dot1{align-items: center; justify-content: center;}
+    .dot1 span { background-color: #c00; }
+
+    .dot2{flex-direction:column;align-items: center; justify-content: center;}
+	.dot2 span:first-child{margin-bottom:20px;}
+
+	.dot3{align-items: center; justify-content: center;}
+	.dot3 span:first-child{margin-top:10px;align-self:flex-start;}
+	.dot3 span:last-child{margin-bottom:10px;align-self:flex-end;}
+
+	.dot4{justify-content:space-between;align-content:space-between;}
+	.dot4 span{margin:10px;background: #c00}
+
+	.dot5{justify-content:space-between;}
+	.dot5 span{margin:10px;}
+	.dot5 span:nth-child(3){margin:0 40px;}
+
+	.dot6 span{margin:6px 15px;}
+
+	/*3d效果*/
+	.dot1{transform: translateZ(50px);}
+	.dot6{transform:translateZ(-50px);}
+	.dot2{transform:rotateY(90deg) translateZ(-50px);}
+	.dot3{transform:rotateY(90deg) translateZ(50px);}
+	.dot5{transform:rotateX(90deg) translateZ(50px);}
+	.dot4{transform:rotateX(90deg) translateZ(-50px);}
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded',function () {
+            var eDice = document.querySelector('.dice');
+
+            // 拖拽效果
+			var angleX = 30;
+			var angleY = 0;
+			document.onmousedown = function(e){
+				var startX = e.clientX;
+				var startY = e.clientY;
+				document.onmousemove = function(evt){
+					var endX = evt.clientX;
+					var endY = evt.clientY;
+					angleX -= (endY - startY)*0.2;
+					angleY += (endX - startX)*0.1;
+					eDice.style.transform = 'perspective(1600px) rotateX('+angleX+'deg)  rotateY('+angleY+'deg)';
+					startX = endX;
+					startY = endY;
+
+					evt.preventDefault();
+				}
+			}
+			document.onmouseup = function(){
+				document.onmousemove = null;
+			}
+                
+        });
+    </script>
+</head>
+
+<body>
+    <div class="dice">
+        <div class="dot1">
+            <span></span>
+        </div>
+        <div class="dot2">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot3">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot4">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot5">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot6">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</body>
+
+</html>

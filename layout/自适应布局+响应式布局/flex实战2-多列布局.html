@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex实战1</title>
+	<style>
+		body,html{
+			height: 100%;margin:0;
+		}
+		.wrap{display:flex;flex-direction:column;height:500px;}
+		.wrap .box{flex:1;display:flex;}
+		.box .son{
+			flex:1;
+			margin:5px;
+			background: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box box1">
+			<div class="son"></div>
+			<div class="son"></div>
+		</div>
+		<div class="box box1">
+			<div class="son"></div>
+			<div class="son"></div>
+			<div class="son"></div>
+		</div>
+		<div class="box box1">
+			<div class="son"></div>
+			<div class="son"></div>
+			<div class="son"></div>
+			<div class="son"></div>
+		</div>
+		<div class="box box2">
+			<div class="son"></div>
+			<div class="son"></div>
+			<div class="son"></div>
+		</div>
+		<div class="box box3">
+			<div class="son"></div>
+			<div class="son"></div>
+		</div>
+		<div class="box box4">
+			<div class="son"></div>
+			<div class="son"></div>
+			<div class="son"></div>
+		</div>
+	</div>
+</body>
+</html>

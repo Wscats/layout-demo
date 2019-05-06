@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>分栏布局</title>
+    <style>
+    	article{
+    		column-width: 300px;
+    		column-count:3;
+    		column-gap:30px;
+    		column-rule:1px dotted #f60;
+    	}
+    	/*横跨所有列*/
+    	article h4{column-span:all;}
+
+    	/*自适应图片宽度*/
+    	article img{width:100%;}
+    </style>
+</head>
+
+<body>
+    <h1>分栏布局</h1>
+    <div class="content">
+        <h2>4万块钱买辆跑车 隔壁老王以为这是法拉利</h2>
+        <article class="article">
+            <h4>原标题：4万块钱买辆跑车 隔壁老王以为这是法拉利</h4>
+            <p><img src="images/1.png" img_width="657" img_height="392" max-width="600"></p>
+            <p>说实话很多人都有一个跑车梦，但可以实现的少之又少，不要说几百万的法拉利兰博基尼，就连平民级的30万左右的跑车都难，但这种二手跑车还是可以拿下的。</p>
+            <p><img src="images/2.png" img_width="654" img_height="393" max-width="600"></p>
+            <p>这是小区的一位小伙最近新买的跑车，看这个侧面很难才出这是哪款车型，来自于现代家族的酷派跑车，车型是2005年的，已经有近12年的车龄，小伙花4万就拿下了。</p>
+            <p><img src="images/3.png" img_width="660" img_height="382" max-width="600"></p>
+            <p>虽然这辆跑车只花了4万就拿下了，但停在小区居民都认为小伙发大财了，买了一辆价值近百万的跑车，小伙这个时候就闷着笑了，确实这个外观的设计蛮漂亮的。</p>
+            <p>不难看出小伙对外观进行了全新的装饰，黑色的车顶贴膜搭配红色的车身视觉感很好，熏黑式的轮毂很有跑车范。</p>
+            <p><img src="images/4.png" img_width="658" img_height="472" max-width="600"></p>
+            <p>虽然可以满足日常的使用但内饰就有点寒酸了，充分的显示出了车龄，小伙说找个时间花个几千块重新的装修一下，要不然和外观就不搭配了。</p>
+            <p data-role="editor-name">责任编辑：<span></span></p>
+        </article>
+    </div>
+</body>
+
+</html>

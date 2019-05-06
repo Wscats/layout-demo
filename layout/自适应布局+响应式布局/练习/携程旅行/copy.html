@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>携程旅行</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font: 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+		}
+
+		img {
+			width: 100%;
+			display: block;
+		}
+
+		a {
+			text-decoration: none;
+			color: #FFF;
+		}
+
+		.header {
+			display: flex;
+		}
+
+		.header a {
+			flex: 1;
+		}
+		
+		/*主体*/
+		.main {
+			padding: 5px;
+		}
+
+		.nav {
+			display: flex;
+			height: 90px;
+			margin-bottom: 5px;
+			border-radius: 5px;
+			background-color: blue;
+		}
+		
+		/*一级*/
+		.nav .sup {
+			flex: 1;
+		}
+		
+		/*二级*/
+		.nav .sub {
+			flex: 2;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.nav .sub a {
+			width: 50%;
+			line-height: 45px;
+			text-align: center;
+			border-left: 1px solid #FFF;
+			border-bottom: 1px solid #FFF;
+			box-sizing: border-box;
+		}
+
+		.nav:nth-child(1) {
+			background-color: #ff697a;
+		}
+
+		.nav:nth-child(4) .sub a {
+			width: 33.333333%;
+		}
+
+		/*其它*/
+		.extra {
+			display: flex;
+		}
+
+		.extra a {
+			flex: 1;
+		}
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<a href="javascript:;">
+			<img src="./images/banner.jpg" alt="">
+		</a>
+	</div>
+	<!-- 主体 -->
+	<div class="main">
+		<!-- 导航 -->
+		<div class="navs">
+			<div class="nav">
+				<div class="sup"></div>
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="sup"></div>
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="sup"></div>
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+		</div>
+		<!-- 其它 -->
+		<div class="extra">
+			<a href="javascript:;">
+				<img src="./images/extra_1.png" alt="">
+			</a>
+			<a href="javascript:;">
+				<img src="./images/extra_2.png" alt="">
+			</a>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="footer"></div>
+</body>
+</html>

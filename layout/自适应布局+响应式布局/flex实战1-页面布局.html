@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex实战1</title>
+	<style>
+		html,body{margin:0;padding:0;height:100%;}
+		.container{
+			display:flex;
+			flex-direction:column;
+			height:100%;
+		}
+		.header,.footer{
+			height: 40px;
+			background-color:#aaa;
+			line-height: 40px;
+		}
+		.main{flex:1;display:flex;}
+		.main .nav{
+			width: 100px;
+			background: blue;
+		}
+		.main .section{
+			flex:1;
+			background: #ccc;
+		}
+		.main .aside{
+			width: 100px;
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">header</div>
+		<div class="main">
+			<div class="nav">nav</div>
+			<div class="section">section</div>
+			<div class="aside">aside</div>
+		</div>
+		<div class="footer">footer</div>
+	</div>
+</body>
+</html>

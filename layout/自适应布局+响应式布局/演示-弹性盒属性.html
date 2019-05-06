@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹性盒属性</title>
+	<style>
+		.box{width:600px;height:100px;border:1px solid #ccc;margin:10px;
+			display:-webkit-flex;display:flex;
+		}
+		.box .item{height:50px;background-color:#efefef;}
+		.box .item:nth-child(2){background-color:#f60;}
+		.box .item:nth-child(3){background-color:#0cf;}
+
+		.exp1{align-items: center;}
+		.exp1 .item{flex:2;}
+
+		.exp2{justify-content:center;}
+		.exp2 .item:first-child{flex-basis:80px;}
+		.exp2 .item:nth-child(2){width:120px;}
+		/*.exp2 .item:nth-child(3){flex:1;}*/
+
+		.exp3 .item{flex:1;}
+		.exp3 .item:nth-child(2){margin:0 10px;}
+		.exp3 .item:nth-child(3){padding:0 10px;}
+
+		.exp4{flex-direction:column;}
+		.exp4 .item:first-child{width:100px;}
+		.exp4 .item:nth-child(2){width:200px;}
+		.exp4 .item:last-child{width:300px;}
+
+		.exp5{height:200px;flex-direction:column;justify-content:center;align-items:flex-end;}
+
+		/*子元素不放大不缩小*/
+		.exp7{flex:none;flex-wrap:wrap;height:390px;align-content:stretch}
+		.exp7 .item{width:130px;}
+		.exp7 .item:nth-child(odd){background-color: #0cf}
+		.exp7 .item:nth-child(even){background-color: #efefef}
+		.exp7 .item:nth-child(3){order:-1;}
+		.exp7 .item:nth-child(6){order:-2;}
+	</style>
+</head>
+<body>
+	<!-- 1、按比例分配 -->
+	<div class="box exp1">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+
+	<!-- 2、当子元素中有宽度值的时候，此元素就定宽处理，剩下的空间再按比例分配 -->
+	<div class="box exp2">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+
+	<!-- 3、
+	子元素有边距时，
+	margin：会被先整体减掉，再进行比例划分
+	padding:会被先加入当前元素，再进行比例划分
+	 -->
+	<div class="box exp3">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+
+	<!-- 4、flex-direction:设置主轴方向 -->
+	<div class="box exp4">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+
+	<!-- 5、flex-direction:设置主轴方向 -->
+	<div class="box exp5">
+		<div class="item" style="width:100px;">1</div>
+		<div class="item" style="width:50px;">2</div>
+		<div class="item" style="width:300px;">3</div>
+	</div>
+
+	<!-- 6、修改元素交叉轴对齐方式 -->
+	<div class="box exp6" style="align-items:center;">
+		<div class="item" style="width:100px;align-self:flex-start">1</div>
+		<div class="item" style="width:50px;">2</div>
+		<div class="item" style="width:300px;align-self:flex-end;">3</div>
+	</div>
+
+	<!-- 7、多轴线排列方式 -->
+	<div class="box exp7">
+		<div class="item">71</div>
+		<div class="item">72</div>
+		<div class="item">73</div>
+		<div class="item">74</div>
+		<div class="item">75</div>
+		<div class="item">76</div>
+		<div class="item">77</div>
+		<div class="item">78</div>
+		<div class="item">79</div>
+		<div class="item">710</div>
+		<div class="item">711</div>
+	</div>
+</body>
+</html>

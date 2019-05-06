@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>骰子</title>
+    <style>
+    .dice{display:flex;justify-content:center;align-items:center;height:280px;background-color: #efefef;}
+    .dice > div{display:flex;margin:10px;padding:8px;border:2px solid #ddd;width:100px;height:100px;border-radius:8px;box-sizing:border-box;background-color: #fff;box-shadow:0 3px 0 3px rgba(0,0,0,.1);}
+    .dice > div > span{display:inline-block;width:26px;height:26px;border-radius:50%;background-color: #00c;box-shadow:1px 3px 0 rgba(0,0,0,.6), inset 2px 8px 1px rgba(0,0,0,.2) ;}
+
+    .dot1{justify-content:center;align-items:center;}
+    div.dot1 span{width:40px;height:40px;background-color: #c00;}
+
+    .dot2{justify-content:space-between;}
+    .dot2 span:last-child{align-self: flex-end;}
+
+    .dot3{justify-content:space-between;}
+    .dot3 span:last-child{align-self: flex-end;}
+    .dot3 span:nth-child(2){align-self: center;}
+
+    .dot4{flex-wrap: wrap;justify-content:space-between;align-content:space-between;}
+    .dot4 span:nth-child(1){margin-right:10px;}
+
+    .dot5{flex-wrap: wrap;justify-content:space-between;align-content:space-between;}
+    .dot5 span:nth-child(3){margin:0 25px;background-color: #c00;}
+
+    .dot6{flex-wrap: wrap;justify-content:space-between;align-content:space-between;}
+    div.dot6 span{width:22px;height:22px;}
+    .dot6 span:nth-child(1){margin-right:15px;}
+    .dot6 span:nth-child(3){margin-right:15px;}
+
+    /*3d展示*/
+    .show-3d{display: block;position:relative;transform-style:preserve-3d;padding:0 150px;width:120px;height:auto;animation: start 2s infinite linear;transform-origin:50% 100%;}
+    .show-3d:hover{animation-play-state:paused;}
+    .show-3d > div{position:absolute;backface-visibility:hidden;box-shadow:none;}
+    .show-3d .dot1{transform:translateZ(50px);}
+    .show-3d .dot6{transform:rotateY(180deg) translateZ(50px);}
+    .show-3d .dot2{transform:rotateY(90deg) translateZ(50px);}
+    .show-3d .dot3{transform:rotateY(270deg) translateZ(50px);}
+    .show-3d .dot4{transform:rotateX(90deg) translateZ(50px);}
+    .show-3d .dot5{transform:rotateX(-90deg) translateZ(50px);}
+
+    @keyframes start{
+        0%{transform: rotateY(0deg) rotateZ(0deg) rotateX(0deg);}
+        100%{transform: rotateY(360deg)  rotateZ(360deg) rotateX(360deg);}
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="dice">
+        <div class="dot1">
+            <span></span>
+        </div>
+        <div class="dot2">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot3">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot4">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot5">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot6">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="dice show-3d">
+        <div class="dot1">
+            <span></span>
+        </div>
+        <div class="dot2">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot3">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot4">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot5">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dot6">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</body>
+
+</html>
